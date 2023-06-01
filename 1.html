@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>네이버 블로그 랜덤 서로이웃 자동화</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>네이버 블로그 랜덤 서로이웃 자동화</h1>
+
+  <form id="loginForm">
+    <label for="id">본인 네이버 ID 입력:</label>
+    <input type="text" id="id" required>
+
+    <label for="password">비밀번호 입력:</label>
+    <input type="password" id="password" required>
+
+    <label for="message">서로 이웃 추가 시 입력할 내용을 입력합니다. (최대 400자 이내):</label>
+    <textarea id="message" maxlength="400"></textarea>
+
+    <label for="delay">로그인 지연 시간 설정 (초):</label>
+    <input type="number" id="delay" min="0" value="0">
+
+    <button type="button" onclick="login()">로그인</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
